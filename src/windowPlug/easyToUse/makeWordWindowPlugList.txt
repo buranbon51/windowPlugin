@@ -1,0 +1,123 @@
+WindGroup
+Win_Plug_O_menuPosX
+Win_Plug_O_menuPosY
+Win_Plug_SetO_menuPosX(posX=20)
+Win_Plug_SetO_menuPosY(posY=10)
+Win_Plug_B_WindGroup
+Win_Plug_B_GroupNumber
+Win_Plug_B_GuiNumEntryWin
+Win_Plug_B_GuiNumSize
+Win_Plug_B_GuiNumPos
+Win_Plug_B_GuiNumPosSize
+Win_Plug_B_WinTitleEntryWin
+Win_Plug_B_WinTitleSize
+Win_Plug_B_WinTitlePos
+Win_Plug_B_WinTitlePosSize
+Win_Plug_MenuMainGroup
+Win_Plug_MenuGroup
+Win_Plug_Menu3bun
+Win_Plug_MenuPosSize
+Win_Plug_MenuSize
+Win_Plug_MenuPos
+Win_Plug_MenuMain
+Win_Plug_SubGroup2BunHeight
+Win_Plug_SubGroup2BunWidth
+Win_Plug_SubGroup3BunHeight
+Win_Plug_SubGroup3BunWidth
+Win_Plug_SubGroup4Bun
+Win_Plug_SubGroupTranp
+Win_Plug_SubGroupTranpLeftToRight
+Win_Plug_SubGroupTranpUpToDown
+Win_Plug_SubGroupAdd
+Win_Plug_SubGroupActive
+Win_Plug_SubGroupReserveActive
+Win_Plug_SubGroupMinimize
+Win_Plug_SubGroupRestore
+Win_Plug_SubGroupClose
+Win_Plug_SubGroupSizePosEntryIniFile
+Win_Plug_SubGroupWindowToBefore
+Win_Plug_SubLR3bunL
+Win_Plug_SubLR3bunC
+Win_Plug_SubLR3bunR
+Win_Plug_SubUD3bunU
+Win_Plug_SubUD3bunC
+Win_Plug_SubUD3bunD
+Win_Plug_SubSemiMax
+Win_Plug_SubLOfLRHerf
+Win_Plug_SubROfLRHerf
+Win_Plug_SubUOfUDHerf
+Win_Plug_SubDOfUDHerf
+Win_Plug_SubLU_Bun4
+Win_Plug_SubLD_Bun4
+Win_Plug_SubRU_Bun4
+Win_Plug_SubRD_Bun4
+Win_Plug_SubSizePosMaxUD
+Win_Plug_SubSizePosMaxLR
+Win_Plug_SubShowSizePos
+Win_Plug_SubShowSizePosRelativ
+Win_Plug_SubShowSizePosLoad
+Win_Plug_SubBun4
+Win_Plug_SubSizeMaxR
+Win_Plug_SubSizeMaxD
+Win_Plug_SubSizeMaxU
+Win_Plug_SubSizeMaxL
+Win_Plug_SubShowSize
+Win_Plug_SubShowSizeRelativ
+Win_Plug_SubShowSizeLoad
+Win_Plug_SubPosCenter
+Win_Plug_SubPosMaxL
+Win_Plug_SubPosMaxR
+Win_Plug_SubPosMaxU
+Win_Plug_SubPosMaxD
+Win_Plug_SubPosMaxLU
+Win_Plug_SubPosMaxLD
+Win_Plug_SubPosMaxRU
+Win_Plug_SubPosMaxRD
+Win_Plug_SubShowPos
+Win_Plug_SubShowPosRelativ
+Win_Plug_SubShowPosLoad
+Win_Plug_SubBeforePosSize
+Win_Plug_SubSaveSizePos
+Win_Plug_SubShowEntryWinPosSize
+Win_Plug_SubShowEntryWinPos
+Win_Plug_SubShowEntryWinSize
+Win_Plug_SubMainGorupChange1
+Win_Plug_SubMainGorupChange2
+Win_Plug_SubMainGorupChange3
+Win_Plug_SubMainGorupChange4
+Win_Plug_SubMainGorupChange5
+Win_Plug_SubMenuMain
+Win_Plug_SubMenuPos
+Win_Plug_SubMenuSize
+Win_Plug_SubMenuPosSize
+Win_Plug_SubMenuGroup
+Win_Plug_beforeRestore(winTitle="A")
+Win_Plug_backupPosSize(winTitle="A")
+Win_Plug_sizeChange(width, height, winTitle="A", absoleFlag=True)
+Win_Plug_posChange(posX, posY, winTitle="A", absoleFlag=True)
+Win_Plug_posSizeChange(posX, posY, width, height, winTitle="A", posAbsoleFlag=True, sizeAbsoleFlag=True)
+Win_Plug_posChangeOnlyX(posX, winTitle="A")
+Win_Plug_posChangeOnlyY(posY, winTitle="A")
+Win_Plug_sizeChangeOnlyWidth(width, winTitle="A")
+Win_Plug_sizeChangeOnlyHeight(height, winTitle="A")
+Win_Plug_posChangeFromEntryList(listNumber, winTitle="")
+Win_Plug_sizeChangeFromEntryList(listNumber, winTitle="")
+Win_Plug_posSizeChangeFromEntryList(listNumber, winTitle="")
+Win_Plug_posChangeFromEntryListPlusAssign(listNumber, posX="", posY="", winTitle="", absoleStr="")
+Win_Plug_sizeChangeFromEntryListPlusAssign(listNumber, width="", height="", winTitle="", absoleStr="")
+Win_Plug_posSizeChangeFromEntryListPlusAssign(listNumber, posX="", posY="", width="", height="", winTitle="", posAbsoleStr="", sizeAbsoleStr="")
+Win_Plug_posChangeSave(listNumber, posX, posY, useWinTitle, absoleFlag, listName)
+Win_Plug_sizeChangeSave(listNumber, width, height, useWinTitle, absoleFlag, listName)
+Win_Plug_posSizeChangeSave(listNumber, posX, posY, width, height, useWinTitle, posAbsoleFlag, sizeAbsoleFlag, listName)
+Win_Plug_posChangeSaveWinTitle(listNumber, getWinTitle="A", useWinTitle="A", listName="")
+Win_Plug_sizeChangeSaveWinTitle(listNumber, getWinTitle="A", useWinTitle="A", listName="")
+Win_Plug_posSizeChangeSaveWinTitle(listNumber, getWinTitle="A", useWinTitle="A", listName="")
+Win_Plug_posChangeLoad(listNumber)
+Win_Plug_sizeChangeLoad(listNumber)
+Win_Plug_posSizeChangeLoad(listNumber)
+Win_Plug_posChangeLoadWinTitle(winTitle)
+Win_Plug_sizeChangeLoadWinTitle(winTitle)
+Win_Plug_posSizeChangeLoadWinTitle(winTitle)
+Win_Plug_gorupMain(number)
+Win_Plug_groupAdd(number, winTitle="A")
+Win_Plug_maxOrResize(winTitle="A")

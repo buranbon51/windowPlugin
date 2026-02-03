@@ -31,7 +31,7 @@ Menu, Win_Plug_MenuGroup, Add
 Menu, Win_Plug_MenuGroup, Add, 分割(&2), :Win_Plug_MenuGroupBunkatu
 Menu, Win_Plug_MenuGroup, Add, 重ねる(&T), :Win_Plug_MenuGroupRepeat
 Menu, Win_Plug_MenuGroup, Add
-Menu, Win_Plug_MenuGroup, Add, 保存(&U), Win_Plug_SubGroupSizePosEntryIniFile
+Menu, Win_Plug_MenuGroup, Add, 保存(&U), Win_Plug_SubGroupBackupSizePos
 Menu, Win_Plug_MenuGroup, Add, 元に戻す(&B), Win_Plug_SubGroupWindowToBefore
 Menu, Win_Plug_MenuGroup, Add, キャンセル(&C), Win_Plug_SubCancel
 
@@ -76,7 +76,7 @@ Menu, Win_Plug_MenuPosSize, Add, 取得(&G), Win_Plug_SubShowSizePosLoad
 Menu, Win_Plug_MenuPosSize, Add
 Menu, Win_Plug_MenuPosSize, Add, 登録を表示(&M), Win_Plug_SubShowEntryWinPosSize
 Menu, Win_Plug_MenuPosSize, Add
-Menu, Win_Plug_MenuPosSize, Add, 保存(&U), Win_Plug_SubSaveSizePos
+Menu, Win_Plug_MenuPosSize, Add, 保存(&U), Win_Plug_SubBackupSizePos
 Menu, Win_Plug_MenuPosSize, Add, 元に戻す(&B), Win_Plug_SubBeforePosSize
 Menu, Win_Plug_MenuPosSize, Add, キャンセル(&C), Win_Plug_SubCancel
 
@@ -101,7 +101,7 @@ Menu, Win_Plug_MenuSize, Add, 取得(&G), Win_Plug_SubShowSizeLoad
 Menu, Win_Plug_MenuSize, Add
 Menu, Win_Plug_MenuSize, Add, 登録を表示(&M), Win_Plug_SubShowEntryWinSize
 Menu, Win_Plug_MenuSize, Add
-Menu, Win_Plug_MenuSize, Add, 保存(&U), Win_Plug_SubSaveSizePos
+Menu, Win_Plug_MenuSize, Add, 保存(&U), Win_Plug_SubBackupSizePos
 Menu, Win_Plug_MenuSize, Add, 元に戻す(&B), Win_Plug_SubBeforePosSize
 
 Menu, Win_Plug_MenuSize, Add, キャンセル(&C), Win_Plug_SubCancel
@@ -131,7 +131,7 @@ Menu, Win_Plug_MenuPos, Add, 取得(&G), Win_Plug_SubShowPosLoad
 Menu, Win_Plug_MenuPos, Add
 Menu, Win_Plug_MenuPos, Add, 登録を表示(&M), Win_Plug_SubShowEntryWinPos
 Menu, Win_Plug_MenuPos, Add
-Menu, Win_Plug_MenuPos, Add, 保存(&U), Win_Plug_SubSaveSizePos
+Menu, Win_Plug_MenuPos, Add, 保存(&U), Win_Plug_SubBackupSizePos
 Menu, Win_Plug_MenuPos, Add, 元に戻す(&B), Win_Plug_SubBeforePosSize
 
 Menu, Win_Plug_MenuPos, Add, キャンセル(&C), Win_Plug_SubCancel

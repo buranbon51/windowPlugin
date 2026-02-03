@@ -3,7 +3,7 @@
 guwiplugf_cleatedDateWindowPlug(){
 
 	version := "v1.00"
-	cleatedDate := "2021年1月25日"
+	cleatedDate := "2026年2月3日"
 	softName := "WindowPlug"
 	message := "`nプラグイン名　　：　" . softName . "`nバージョン　：　" . version . "`n作成日　　 ：　" . cleatedDate . "`n作者　　　　：　ブランボン`n"
 

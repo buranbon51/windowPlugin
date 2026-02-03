@@ -83,7 +83,7 @@ Win_Plug_SubGroupClose:
 	GroupClose, %glowi_WindGroup%%glowi_GroupNum%, A
 	return
 
-Win_Plug_SubGroupSizePosEntryIniFile:
+Win_Plug_SubGroupBackupSizePos:
 	wind_groupSizePosEntryIniFile(glowi_GroupNum)
 	return
 
@@ -310,7 +310,7 @@ Win_Plug_SubBeforePosSize:
 	wind_myWindowToBefore("A")
 	return
 
-Win_Plug_SubSaveSizePos:
+Win_Plug_SubBackupSizePos:
 	rwipluf_beforeWindowControl()
 	wind_sizePosEntryToolTipOutPut("A")
 	return

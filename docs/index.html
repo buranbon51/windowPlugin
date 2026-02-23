@@ -1,0 +1,1071 @@
+
+<!DOCTYPE HTML>
+<html lang="ja">
+<head prefix="og: https://ogp.me/ns#">
+
+<meta charset="utf-8">
+
+<meta name="keywords" content="windowPlug。その１,TextRunRun,テキストランラン,テキストルンルン">
+<meta name="description" content="TextRunRunの追加機能で、ウインドウの位置などを登録するものがあるのでその説明">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone-no">
+
+<link rel="shortcut icon" href="common/imgCommon/shorticon.ico">
+<link rel="apple-touch-icon" href="common/imgCommon/touchicon.png" />
+<link rel="icon" sizes="192x192" href="common/imgCommon/icon192.png" />
+
+
+<title>windowPlug。その１ - ブランボンのGitHubPagesのやつ</title>
+
+<link type="text/css" href="common/cssCommon/resetAll.css" rel="stylesheet" />
+<link type="text/css" href="common/cssCommon/buBootstrap.css" rel="stylesheet" />
+
+<link type="text/css" href="common/cssCommon/commonCssbu.css" rel="stylesheet" />
+<link type="text/css" href="css/trrCommon.css" rel="stylesheet" />
+<link type="text/css" href="css/windowPlug.css" rel="stylesheet" />
+
+    <script src="common/jQuery/jquery.min.js"></script>
+    <script src="common/javaScript/jQueryMenuSlide.js"></script>
+
+</head>
+<body>
+
+<div id="allContents">
+
+    <header id="header-toppage">
+        <div id="bg-headerbg"></div>
+        <div id="header-contents">
+            <div id="div-header-title">
+                <div id="header-title-2">
+                    <h1 id="alltop-title">
+                        ブランボン<span class="alltop-title-little">の</span><br class="br-mobile-only" /><span class="alltop-title-little2">GitHub Pages</span><span class="alltop-title-little">のやつ</span>
+                    </h1>
+                </div>
+            </div>
+            <nav id="nav-head-trrPage">
+                <div id="div-head-trrPage">
+                    <p class="p-head-trrPage1">
+                        関連ページ
+                    </p>
+                    <div class="trrhomepage-block">
+                        <a href="https://textrunrunburanbon.com" target="_blank">TextRunRunの説明を見るページ</a>
+                    </div>
+                </div>
+            </nav>
+            <div id="pagetop-first"></div>
+        </div>
+    </header>
+
+<div id="page-contents">
+
+<main id="mainId">
+
+<article class="articleClass">
+
+    <h1 class="h1-first">ウインドウの位置などを登録する追加機能 windowPlug。その１</h1>
+    <nav class="breadcrumb-art">
+        <ul class="ul-breadcrumb">
+            <li><span class="breadcrumb-current">トップ</span></li>
+            <li><span class="breadcrumb-current">windowPlug。その１</span></li>
+        </ul>
+    </nav>
+
+<div class="width-short">
+    <div class="div-section-one d-type-basic">
+        <nav class="categorylinks">
+            <div class="categorylinks-title">
+                <span class="span-categorylinks-title">windowPlugの関連</span>
+            </div>
+            <ul class="ul-categorylinks-row">
+                <li class="categorylinks-current">その<span class="numeral">1</span></li>
+                <li><a href="windowPlug2.html">その<span class="numeral">2</span></a></li>
+                <li><a href="windowPlugDict.html">windowPlugの変数・関数・サブルーチン</a></li>
+            </ul>
+        </nav>
+    </div><!--  div-section-one  -->
+
+    <div class="div-section-one d-type-basic">
+        <nav class="index-thispage">
+            <h2 class="t-index-thispage">このページの目次</h2>
+            <ul class="ul-index-preface">
+                <li>
+                    <a href="#title_preface">前書き</a>
+                </li>
+            </ul>
+            <ul class="ul-index-thispage">
+                <li>
+                    <a href="#title1">概要</a>
+                </li>
+                <li>
+                    <a href="#title2">ウインドウの情報を登録する</a>
+                </li>
+                <li>
+                    <a href="#title3">ソースコードへの追加の仕方</a>
+                    <ul class="ul-index-thispage-2">
+                        <li>
+                            <a href="#title3_1">windowPlug のダウンロード</a>
+                        </li>
+                        <li>
+                            <a href="#title3_2">windowPlug のフォルダをコピーする</a>
+                        </li>
+                        <li>
+                            <a href="#title3_3">ソースコードを記入する</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#title4">位置とサイズのウインドウについて</a>
+                    <ul class="ul-index-thispage-2">
+                        <li>
+                            <a href="#title4_1">絶対指定とプラス指定</a>
+                        </li>
+                        <li>
+                            <a href="#title4_2">ウインドウタイトル</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#title5">メニューにある項目について</a>
+                    <ul class="ul-index-thispage-2">
+                        <li>
+                            <a href="#title5_1">保存と元に戻す</a>
+                        </li>
+                        <li>
+                            <a href="#title5_2">取得</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div><!--  div-section-one  -->
+    <section id="title_preface" class="sectionFirst d-type-basic">
+        <h1 class="t-preface">
+            <span class="t-preface-inner">前書き</span>
+        </h1>
+        <p class="p-sub">
+            ウインドウの位置とサイズを変更する
+            <abbr class="abbr-softName-s" title="TextRunRun">TRR</abbr>
+            のプラグイン（追加項目）の様なものを紹介して説明します。
+        </p>
+        <p class="p-bundle">
+            とりあえず、名前を
+            <span class="thisword-s">windowPlug</span>
+            と名付けています。
+        </p>
+        <div class="caution">
+            <div class="bundle-point inner">
+                <p class="p-sub">
+                    ここで説明する
+                    <span class="thisword-s">windowPlug</span>
+                    は<br />
+                    <em class="em-basic">
+                        ソースコード版の
+                        <span class="softName-s">TextRunRun</span>
+                        でのみ使用できるものです。
+                    </em>
+                </p>
+            </div>
+            <p class="p-sub">
+                ソースコード版の
+                <abbr class="abbr-softName-s" title="TextRunRun">TRR</abbr>
+                に追加する事で初めて使用できます。
+            </p>
+            <p class="p-sub">
+                追加の手順は後で説明します。
+            </p>
+        </div>
+        <!--  スペース   -->
+        <div class="spacer-1"></div>
+        <p class="p-sub">
+            わざわざ紹介しておいて何ですが、そんなに大したものではありません。
+        </p>
+        <p class="p-sub">
+            ウインドウの位置とサイズを変更するものを登録して使っていける様にしたものです。
+        </p>
+    </section><!-- sectionFirst -->
+    <section id="title1" class="sectionFirst d-type-basic">
+        <h1 class="t-lank1">概要</h1>
+        <p class="p-sub">
+            基本的に以下の画像の左上にあるメニューを使っていくものです。
+        </p>
+        <div class="img-div">
+            <img src="image/windowPlugImg/winMenu.png" alt="画像">
+        </div>
+        <div class="bundle">
+            <p class="p-sub">
+                メニューを見ると分かると思いますが、
+            </p>
+            <ul class="ul-disc-mini">
+                <li><span class="guiText-r">移動</span></li>
+                <li><span class="guiText-r">サイズ</span></li>
+                <li><span class="guiText-r">サイズと移動</span></li>
+                <li><span class="guiText-r">グループ</span></li>
+            </ul>
+            <p class="p-sub-attach-top">
+                この
+                <span class="numeral">4</span>
+                種類に大きく分かれています。
+            </p>
+        </div>
+        <p class="p-sub">
+            ウインドウに対してこれらの操作と登録をしていくものです。
+        </p>
+        <div class="div-section-one d-type-basic">
+            <p class="p-sub">
+                とりあえず例として
+                <span class="guiText-s">移動</span>
+                のメニューの
+            </p>
+            <div class="img-div">
+                <img src="image/windowPlugImg/menuPos.png" alt="画像">
+            </div>
+            <div class="bundle">
+                <p class="p-sub">
+                    <span class="guiText-s">登録を表示</span>
+                    をたどると以下のウインドウが表示します。
+                </p>
+            </div>
+            <div class="img-div">
+                <img src="image/windowPlugImg/winlistPos.png" class="img-w-300px" alt="画像">
+            </div>
+            <div class="bundle">
+                <p class="p-sub">
+                    このウインドウは、ウインドウの位置の情報を登録するリストといったものです。
+                </p>
+            </div>
+            <div class="bundle">
+                <p class="p-sub">
+                    これを見て分かるとおり、この
+                    <span class="thisword-s">windowPlug</span>
+                    はウインドウの情報を登録しておいて、その後に使っていける様にするものです。
+                </p>
+            </div>
+        </div><!--  div-section-one  -->
+        <div class="div-section-one d-type-basic">
+            <p class="p-sub">
+                以上の事を見れば使い方と出来る事はほぼ予想がつくようなものだと思います。
+            </p>
+            <p class="p-sub">
+                とはいっても、使ってみなくてもここで全て把握できる様にするために以下にこまごまと説明をしていく事にします。
+            </p>
+        </div><!--  div-section-one  -->
+    </section><!-- sectionFirst -->
+    <section id="title2" class="sectionFirst d-type-basic">
+        <h1 class="t-lank1">ウインドウの情報を登録する</h1>
+        <p class="p-sub">
+            先ほどあった、ウインドウの情報を登録するリストがあるウインドウを使います。
+        </p>
+        <p class="p-sub">
+            先ほどと違って、メニューの
+            <span class="guiText-s">サイズと移動</span>
+            と
+            <span class="guiText-s">登録を表示</span>
+            を経由した場合で説明します。
+        </p>
+        <div class="img-div">
+            <img src="image/windowPlugImg/winlistPosSize.png" class="img-w-300px" alt="画像">
+        </div>
+        <div class="publication d-type-basic">
+            <p class="p-sub">
+                このウインドウを
+                <span class="windowName-s">ウインドウの登録</span>
+                のウインドウと呼んでいきます。
+            </p>
+        </div>
+        <p class="p-bundle">
+            そして、
+            <span class="button-gui-r">最前面のを保存</span>
+            のボタンを押したとします。
+        </p>
+        <div class="img-div">
+            <img src="image/windowPlugImg/winGuiPosSize.png" class="img-w-450px" alt="画像">
+        </div>
+        <p class="p-sub">
+            <span class="windowName-r">ウインドウの登録</span>
+            のウインドウの一つ下のウインドウの、「位置と大きさ」の情報が数字で表示されているウインドウが表示します。
+        </p>
+        <div class="bundle">
+            <p class="p-sub">
+                そして、この「位置と大きさ」の数字が表示されているウインドウがある時に、
+                <span class="windowName-r">ウインドウの登録</span>
+                のウインドウの方の<br />
+                <span class="button-gui-r">保存</span>
+                のボタンを押すと、「位置と大きさ」のウインドウの情報が登録されます。<br />
+            </p>
+            <p class="p-sub">
+                ここの場合では、リストの
+                <span class="pickup-easy-s">set1</span>
+                に登録された事になります。
+            </p>
+            <div class="supplement">
+                <div class="supplement-caption">
+                    補足
+                </div>
+                <p class="p-sub">
+                    「位置と大きさ」のウインドウが表示されていなくても、
+                    <span class="button-gui-r">保存</span>
+                    のボタンは使用できます。<br />
+                    ただしその状態だと、どの情報が
+                    <span class="pickup-easy-s">set1</span>
+                    に上書きされるかが分かりずらい事になります。
+                </p>
+            </div>
+        </div>
+        <div class="div-section-one d-type-basic">
+            <p class="p-sub">
+                後は予想がつく事でしょうが、登録をした後はそれを今後に使っていける事になります。
+            </p>
+            <div class="bundle">
+                <p class="p-sub-no-bottom">
+                    <span class="windowName-r">ウインドウの登録</span>
+                    のウインドウの方の<br />
+                    <span class="button-gui-r">読み出し</span>
+                    のボタンを押すと「位置とサイズ」のウインドウが表示し、
+                    <span class="pickup-easy-r">set1</span>
+                    などにある情報が記入された状態になります。
+                </p>
+                <p class="brackets">
+                    「位置とサイズ」のウインドウの<br />
+                    <span class="button-gui-r">On</span>
+                    のボタンを押すと、その情報を一つ下のウインドウの「位置と大きさ」に対して変更させます。
+                </p>
+            </div>
+            <div class="bundle">
+                <p class="p-sub">
+                    <span class="button-gui-r">実行</span>
+                    のボタンを押すと、
+                    <span class="pickup-easy-r">set1</span>
+                    などにある情報の通りに
+                    <span class="windowName-r">ウインドウの登録</span>
+                    のウインドウの、一つ下のウインドウの「位置と大きさ」を変更させます。
+                </p>
+            </div>
+        </div><!--  div-section-one  -->
+    </section><!-- sectionFirst -->
+    <section id="title3" class="sectionFirst d-type-basic">
+        <h1 class="t-lank1">ソースコードへの追加の仕方</h1>
+        <p class="p-sub">
+            この
+            <span class="thisword-s">windowPlug</span>
+            は<br />
+            <span class="softName-r">TextRunRun</span>
+            のソースコードに追加しないとそもそも使えません。
+        </p>
+        <p class="p-sub">
+            今になってですが、使える様にするための方法を説明します。
+        </p>
+        <div class="caution d-type-basic">
+            <div class="caution-caption">
+                諸注意
+            </div>
+            <p class="p-sub">
+                この
+                <span class="thisword-s">windowPlug</span>
+                は、
+                <span class="pickup-easy-r">41</span>
+                から
+                <span class="pickup-easy-r">44</span>
+                の Gui の番号を使用しています。
+            </p>
+            <p class="p-sub">
+                <abbr class="abbr-softName-r" title="TextRunRun">TRR</abbr>
+                の中で番号が同じ Gui をユーザーが既に使用している場合は注意してください。
+            </p>
+            <p class="brackets">
+                同じ様なプラグインである
+                <span class="thisword-s">mousePlug</span>
+                というのがありますが、それと同時に使う事は可能です。
+            </p>
+        </div>
+        <section id="title3_1" class="sectionSecond d-type-basic">
+            <h2 class="t-lank2">windowPlug のダウンロード</h2>
+            <p class="p-sub">
+                <cite class="webtitle-r">GitHub</cite>
+                のページからソースコードをダウンロードします。
+            </p>
+            <p class="p-sub">
+                <a href="https://github.com/buranbon51/windowPlugin" target="_blank" class="blank-siteword">
+                    <img src="image/windowPlugImg/icon.png" class="img-w-32px" alt="アイコン">
+                    windowPlug
+                    のソースコード
+                </a>
+            </p>
+            <!--  スペース   -->
+            <div class="spacer-1"></div>
+            <p class="p-sub">
+                <abbr class="abbr-softName-r" title="TextRunRun">TRR</abbr>
+                のソースコードをダウンロードした方なら、
+                <cite class="webtitle-r">GitHub</cite>
+                からそれをする方法も説明不要だと思います。
+            </p>
+            <div class="caution">
+                <p class="p-sub">
+                    <abbr class="abbr-softName-r" title="TextRunRun">TRR</abbr>
+                    のソースコードをダウンロードした方でないとそもそも
+                    <span class="thisword-s">windowPlug</span>
+                    の追加はできません。
+                </p>
+                <div class="div-trrpage inner d-type-small">
+                    <p class="t-div-trrpage">
+                        TextRunRunのWebサイト
+                    </p>
+                    <p class="p-sub-no-top">
+                        <abbr class="abbr-softName-r" title="TextRunRun">TRR</abbr>
+                        のソースコードの事については以下のページで説明しています。
+                    </p>
+                    <p class="p-sub">
+                        <span class="breadway-link">
+                            <span class="breadway-elem">
+                                <span class="trrhomepage spacePlus-r"><a href="https://textrunrunburanbon.com">TextRunRunの説明を見るページ</a></span>
+                            </span><br />
+                            <span class="breadway-elem"><span class="detailPage">細かい説明</span></span>
+                            <a href="https://textrunrunburanbon.com/page/detail/source/source1.php" target="_blank" class="blank-siteword">ソースコード版について</a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section><!-- sectionSecond -->
+        <section id="title3_2" class="sectionSecond d-type-basic">
+            <h2 class="t-lank2">windowPlug のフォルダをコピーする</h2>
+            <p class="p-sub">
+                <span class="thisword-r">windowPlug</span>
+                をダウンロードして解凍すると、以下のファイル構成になっていると思います。
+            </p>
+            <div class="img-div">
+                <img src="image/windowPlugImg/winPlugDirMark.png" class="img-w-450px" alt="画像">
+            </div>
+            <p class="p-sub">
+                この中の
+                <span class="filePath-pickup-s">src</span>
+                の中にある、<br />
+                <span class="filePath-pickup-r">windowPlug</span>
+                のフォルダを使います。
+            </p>
+            <p class="p-sub-attach-bottom">
+                このフォルダだけを、
+                <abbr class="abbr-softName-r" title="TextRunRun">TRR</abbr>
+                のフォルダの中の
+            </p>
+            <div class="filePath-block">
+                trrEvery\Plugins
+            </div>
+            <p class="p-sub-attach-top">
+                この中にコピーしてください。
+            </p>
+        </section><!-- sectionSecond -->
+        <section id="title3_3" class="sectionSecond d-type-basic">
+            <h2 class="t-lank2">ソースコードを記入する</h2>
+            <p class="p-sub">
+                次は、ファイルの中に文字を記入します。
+            </p>
+            <div class="filePath-block">
+                trrEvery\Plugins
+            </div>
+            <p class="p-sub-attach-top">
+                このフォルダの中にある、<br />
+                <span class="filePath-pickup-r">pluginsSubroutineAndFunction&#46;ahk</span>
+                のファイルに以下を記入します。
+            </p>
+            <div class="width-long-wrap">
+                <div class="inputBox width-long-1">
+                    <pre><code class="srcCode"><span class="ahkComm">#Include</span> <span class="varPercent">&#37;A_ScriptDir&#37;</span>&#92;trrEvery&#92;Plugins&#92;windowPlug&#92;useForPlug&#92;windowPlugSubrouAndFunc&#46;ahk
+</code></pre>
+                </div>
+            </div>
+            <!--  スペース   -->
+            <div class="spacer-1"></div>
+            <p class="p-sub">
+                そして、同じフォルダ内にある<br />
+                <span class="filePath-pickup-r">pluginsStartUpExecute&#46;ahk</span>
+                のファイルに以下を記入します。
+            </p>
+            <div class="width-long-wrap">
+                <div class="inputBox width-long-1">
+                    <pre><code class="srcCode"><span class="ahkComm">#Include</span> <span class="varPercent">&#37;A_ScriptDir&#37;</span>&#92;trrEvery&#92;Plugins&#92;windowPlug&#92;useForPlug&#92;windowPlugStartUp&#46;ahk
+</code></pre>
+                </div>
+            </div>
+            <!--  スペース   -->
+            <div class="spacer-1"></div>
+            <p class="p-sub">
+                少し手間がかかりますが、以上で
+                <span class="thisword-s">windowPlug</span>
+                を使える様にする準備は終了です。
+            </p>
+            <p class="p-sub">
+                <abbr class="abbr-softName-r" title="TextRunRun">TRR</abbr>
+                を起動すれば使える様になっているはずです。
+            </p>
+            <div class="div-section-one d-type-basic">
+                <div class="instruction-one">
+                    <div class="instruction-execution">
+                        <p class="p-sub">
+                            使える様になったかどうかのテストとして
+                        </p>
+                        <div class="inputOneLine d-type-small">
+                            <code class="srcCode">
+                                <span class="ahkComm">Gosub</span>&#44; Win_Plug_SubMenuMain
+                            </code>
+                        </div>
+                        <p class="p-sub-attach-top">
+                            これを使ってみてください。
+                        </p>
+                        <p class="p-sub">
+                            これを使うと、先ほど説明に挙げたメニューが表示するはずです。
+                        </p>
+                        <div class="img-div">
+                            <img src="image/windowPlugImg/winMenu.png" alt="画像">
+                        </div>
+                        <p class="p-sub">
+                            左上にあるこのメニューが表示されれば正しくソースコードが追加されている事になります。
+                        </p>
+                        <div class="bundle">
+                            <p class="p-sub">
+                                それと、うまくいったなら、このスクリプトを
+                                <span class="softDfn-s">常時使用のキー</span>
+                                か
+                                <span class="softDfn-s">アイテム</span>
+                                にしておけば手軽に使える様になると思います。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><!--  div-section-one  -->
+        </section><!-- sectionSecond -->
+    </section><!-- sectionFirst -->
+    <section id="title4" class="sectionFirst d-type-basic">
+        <h1 class="t-lank1">位置とサイズのウインドウについて</h1>
+        <p class="p-sub">
+            使い方の説明に戻ります。
+        </p>
+        <p class="p-sub">
+            大体の予想はつく事でしょうが、このウインドウの事について説明しておきます。
+        </p>
+        <div class="img-div">
+            <img src="image/windowPlugImg/winGuiPosSizeGet.png" class="img-w-300px" alt="画像">
+        </div>
+        <!--  スペース   -->
+        <div class="spacer-1"></div>
+        <div class="bundle">
+            <p class="p-sub">
+                <span class="guiText-r">X</span>
+                （横）と
+                <span class="guiText-s">Y</span>
+                （縦）の位置
+            </p>
+        </div>
+        <div class="bundle">
+            <p class="p-sub">
+                <span class="guiText-r">Width</span>
+                （横幅）と
+                <span class="guiText-s">Height</span>
+                （高さ）の大きさ
+            </p>
+        </div>
+        <p class="p-sub">
+            これらを数値で指定します。
+        </p>
+        <p class="p-sub">
+            <span class="button-gui-r">On</span>
+            のボタンを押すと、一つ下のウインドウに対して位置とサイズの変更をします。
+        </p>
+        <section id="title4_1" class="sectionSecond d-type-basic">
+            <h2 class="t-lank2">絶対指定とプラス指定</h2>
+            <p class="p-sub">
+                <span class="guiText-r">絶対指定</span>
+                と
+                <span class="guiText-s">プラス指定</span>
+                のスイッチタイプのチェック項目があります。
+            </p>
+            <p class="p-sub">
+                <span class="guiText-r">絶対指定</span>
+                が普通の状態だと思ってください。
+            </p>
+            <div class="bundle">
+                <p class="p-sub">
+                    <span class="guiText-r">プラス指定</span>
+                    を選んでいる場合、例えば<br />
+                    <span class="guiText-r">Width</span>
+                    が
+                    <span class="pickup-easy-s"><span class="numeral">100</span></span>
+                    なら、横幅が
+                    <span class="numeral">100</span>
+                    の分だけ追加で大きくなります。
+                </p>
+                <div class="supplement">
+                    <div class="supplement-caption">
+                        補足
+                    </div>
+                    <p class="p-sub">
+                        <span class="guiText-r">プラス指定</span>
+                        を使う場合は指定した場所の他の箇所は全て
+                        <span class="pickup-easy-s"><span class="numeral">0</span></span>
+                        に指定して使った方が紛らわしくないと思います。
+                    </p>
+                </div>
+            </div>
+            <div class="bundle">
+                <p class="p-sub">
+                    予想がついている事を言いますが、<br />
+                    <span class="guiText-r">位置の指定</span>
+                    の場所が、
+                    <span class="guiText-r">X</span>
+                    と
+                    <span class="guiText-s">Y</span>
+                    に対して。
+                </p>
+                <p class="p-sub">
+                    <span class="guiText-r">サイズの指定</span>
+                    の場所が、
+                    <span class="guiText-r">Width</span>
+                    と
+                    <span class="guiText-s">Height</span>
+                    に対して影響をします。
+                </p>
+            </div>
+        </section><!-- sectionSecond -->
+        <section id="title4_2" class="sectionSecond d-type-basic">
+            <h2 class="t-lank2">ウインドウタイトル</h2>
+            <p class="p-sub">
+                一番下に
+                <span class="guiText-s">ウインドウタイトル</span>
+                の入力欄があります。
+            </p>
+            <p class="p-sub-attach-bottom">
+                ここに何も記入されていない場合は、この「位置とサイズ」のウインドウの一つ下のウインドウが対象になります。
+            </p>
+            <p class="brackets">
+                ちなみに、
+                <span class="input-easy-r">A</span>
+                のみが記入されている場合も同じです。
+            </p>
+            <div class="bundle">
+                <p class="p-sub-attach-bottom">
+                    ここに何らかの文字が記入している場合は、そのウインドウタイトルのウインドウに対してのみ実行します。
+                </p>
+                <p class="brackets">
+                    当てはまる対象が複数ある場合は、対象になる一番上のウインドウ一つだけが対象です。
+                </p>
+                <div class="supplement">
+                    <div class="supplement-caption">
+                        補足
+                    </div>
+                    <p class="p-sub">
+                        <abbr class="abbr-softName-r" title="TextRunRun">TRR</abbr>
+                        のウインドウタイトルの指定は、前方一致です。
+                    </p>
+                    <div class="div-sub">
+                        <div class="caution inner">
+                            <div class="caution-caption">
+                                諸注意
+                            </div>
+                            <p class="p-sub">
+                                前方一致のルールを、ユーザーが意図的に変える事は可能ですが、変えた場合は
+                                <span class="softDfn">テキスト上のキー</span>
+                                が使用できなくなってしまいます。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="p-sub">
+                基本的には、何も記入していない状態が使いやすいはずです。
+            </p>
+        </section><!-- sectionSecond -->
+    </section><!-- sectionFirst -->
+    <section id="title5" class="sectionFirst d-type-basic">
+        <h1 class="t-lank1">メニューにある項目について</h1>
+        <p class="p-sub">
+            メニューにある項目についてある程度説明しておきます。
+        </p>
+        <div class="img-div">
+            <img src="image/windowPlugImg/menuPosSize.png" alt="画像">
+        </div>
+        <div class="bundle">
+            <p class="p-sub">
+                この
+                <span class="thisword-s">windowPlug</span>
+                は、
+                <span class="guiText-r">移動</span>
+                と
+                <span class="guiText-s">サイズ</span>
+                と
+                <span class="guiText-s">サイズと移動</span>
+                に分かれています。
+            </p>
+            <p class="p-sub">
+                これらの違いは予想がつくものだと思います。これらのメニュー項目はほとんどが共通しています。
+            </p>
+            <p class="p-sub">
+                ここでは、
+                <span class="guiText-r">サイズと移動</span>
+                のとこを例に使っていきます。
+            </p>
+        </div>
+        <section id="title5_1" class="sectionSecond d-type-basic">
+            <h2 class="t-lank2">保存と元に戻す</h2>
+            <p class="p-sub">
+                メニューの下の方に<br />
+                <span class="guiText-r">保存</span>
+                と
+                <span class="guiText-s">元に戻す</span>
+                があります。
+            </p>
+            <p class="p-sub">
+                <span class="guiText-r">保存</span>
+                を選ぶと、ウインドウの位置とサイズの情報が保存されます。
+            </p>
+            <p class="p-sub">
+                保存された後は
+                <span class="guiText-s">元に戻す</span>
+                を選ぶ事で保存していた情報の時の位置とサイズに戻します。
+            </p>
+            <div class="bundle-point">
+                <p class="p-sub">
+                    といっても、
+                    この
+                    <span class="thisword-s">windowPlug</span>
+                    を使ってウインドウの位置かサイズを変える場合は、この
+                    <span class="guiText-s">保存</span>
+                    と同じ処理を先に行う様にしています。
+                </p>
+                <p class="p-sub">
+                    なので、
+                    <span class="guiText-r">保存</span>
+                    を使う事はあえてしなくてもよいと思います。
+                </p>
+            </div>
+            <div class="caution">
+                <div class="caution-caption">
+                    諸注意
+                </div>
+                <p class="p-sub">
+                    この
+                    <span class="guiText-r">保存</span>
+                    と
+                    <span class="guiText-s">元に戻す</span>
+                    の処理はウインドウタイトルを参考にして行います。
+                </p>
+                <p class="p-sub">
+                    ソフトによっては、ウインドウがアクティブかどうかでウインドウタイトルが変わってしまうものがあったりします。
+                </p>
+                <p class="p-sub">
+                    その場合は思うように動作しない可能性が高いです。
+                </p>
+                <p class="brackets">
+                    エディターのソフトに多いです。ウインドウがアクティブになるとウインドウタイトルがファイルパスになるものが多い様です。なのでエディターでは思うように
+                    <span class="guiText-s">元に戻す</span>
+                    が動作しないと思います。
+                </p>
+            </div>
+            <!--  スペース   -->
+            <div class="spacer-1"></div>
+            <div class="supplement">
+                <div class="supplement-caption">
+                    補足
+                    <span class="numeral">1</span>
+                </div>
+                <p class="p-sub">
+                    この
+                    <span class="guiText-r">保存</span>
+                    の動作は、
+                </p>
+                <div class="width-long-wrap">
+                    <div class="filePath-block width-long-1">
+                        <span class="varPercent">&#37;A_ScriptDir&#37;</span>&#92;trrEvery&#92;user&#92;windowPlug&#92;backupPosSize&#46;ini
+                    </div>
+                </div>
+                <p class="p-sub-attach-top">
+                    このファイルに保存されます。
+                </p>
+                <p class="p-sub">
+                    このファイル内にウインドウタイトルごとに区別されて記録する感じです。
+                </p>
+                <div class="bundle-no-bottom">
+                    <p class="p-sub">
+                        <span class="guiText-r">元に戻す</span>
+                        を使った時は、その情報は削除されます。
+                    </p>
+                    <p class="p-sub">
+                        このファイル内にあるそのウインドウタイトルの情報を削除する感じです。
+                    </p>
+                </div>
+            </div>
+            <!--  スペース   -->
+            <div class="spacer-1"></div>
+            <div class="supplement">
+                <div class="supplement-caption">
+                    補足
+                    <span class="numeral">2</span>
+                </div>
+                <p class="p-sub">
+                    この
+                    <span class="thisword-s">windowPlug</span>
+                    を使って位置かサイズを変える場合は
+                    <span class="guiText-s">保存</span>
+                    と同じ処理を最初に行うと書きました。
+                </p>
+                <p class="p-sub">
+                    その場合の
+                    <span class="guiText-s">保存</span>
+                    の動作は、一度だけです。
+                </p>
+                <p class="p-sub">
+                    同じウインドウタイトルの情報が保存されていた場合は
+                    <span class="guiText-s">保存</span>
+                    をせず、情報の上書きをしません。
+                </p>
+                <p class="p-sub">
+                    なので最初の
+                    <span class="guiText-s">保存</span>
+                    だけが有効になります。
+                </p>
+                <div class="bundle-no-bottom">
+                    <p class="p-sub">
+                        ただ、メニューから
+                        <span class="guiText-s">保存</span>
+                        選んだ場合は上書きをする様になっています。
+                    </p>
+                    <p class="p-sub">
+                        なので、明示的に今の状態を保存したい場合は
+                        <span class="guiText-s">保存</span>
+                        をメニューから選んでください。
+                    </p>
+                </div>
+            </div>
+        </section><!-- sectionSecond -->
+        <section id="title5_2" class="sectionSecond d-type-basic">
+            <h2 class="t-lank2">取得</h2>
+            <p class="p-sub">
+                メニュー内に
+                <span class="guiText-s">取得</span>
+                というものがあります。
+            </p>
+            <p class="p-sub">
+                それを選ぶと
+            </p>
+            <div class="img-div">
+                <img src="image/windowPlugImg/winGuiPosSizeGet.png" class="img-w-300px" alt="画像">
+            </div>
+            <p class="p-sub">
+                「位置とサイズ」のウインドウが表示し、アクティブウインドウの位置とサイズが入力欄に記入されます。
+            </p>
+            <div class="div-section-one d-type-basic">
+                <p class="p-sub">
+                    メニュー内にある
+                    <span class="guiText-s">プラス指定</span>
+                    を選ぶと、<br />
+                    「位置とサイズ」のウインドウが表示し
+                </p>
+                <p class="p-sub">
+                    <span class="guiText-r">絶対指定</span>
+                    と
+                    <span class="guiText-s">プラス指定</span>
+                    のスイッチタイプのチェック項目が<br />
+                    <span class="guiText-r">プラス指定</span>
+                    の方にチェックが入った状態で表示します。
+                </p>
+                <p class="p-sub">
+                    後、入力欄に
+                    <span class="pickup-easy-s">0</span>
+                    が記入されます。
+                </p>
+            </div><!--  div-section-one  -->
+            <div class="div-section-one d-type-basic">
+                <p class="p-sub">
+                    メニュー内にある
+                    <span class="guiText-s">数字で指定</span>
+                    を選んだ場合は、「位置とサイズ」のウインドウが表示するというだけです。
+                </p>
+            </div><!--  div-section-one  -->
+        </section><!-- sectionSecond -->
+        <p class="p-sub">
+            メニューで説明しておく事は大体はこれだけです。
+        </p>
+        <p class="p-sub">
+            何度も書いてしまってますが、
+            <span class="guiText-r">移動</span>
+            と
+            <span class="guiText-s">サイズ</span>
+            と
+            <span class="guiText-s">サイズと移動</span>
+            がありますが、これらのメニューはほぼ共通しているので違いは説明しなくても分かると思います。
+        </p>
+        <div class="supplement">
+            <div class="supplement-caption">
+                補足
+            </div>
+            <p class="p-sub">
+                ちなみに、
+                <span class="guiText-r">移動</span>
+                と
+                <span class="guiText-s">サイズ</span>
+                にある、<br />
+                <span class="guiText-r">保存</span>
+                と
+                <span class="guiText-s">元に戻す</span>
+                は、<br />
+                <span class="guiText-r">サイズと移動</span>
+                にある<br />
+                <span class="guiText-r">保存</span>
+                と
+                <span class="guiText-s">元に戻す</span>
+                と何ら変わりはありません。
+            </p>
+            <p class="p-sub">
+                <span class="guiText-r">サイズ</span>
+                の方にある
+                <span class="guiText-s">保存</span>
+                が、サイズだけを保存したりとかはしません。
+            </p>
+            <p class="p-sub">
+                少し残念かもしれませんが、現時点ではそうなっています。
+            </p>
+        </div>
+    </section><!-- sectionFirst -->
+    <div class="div-section-one d-type-wide">
+        <p class="p-sub">
+            必要な説明は大体以上だと思います。
+        </p>
+        <p class="p-sub">
+            この
+            <span class="thisword-s">windowPlug</span>
+            は使っていけばすぐに分かると思いますのでこれ以上読まなくても普通に使う分には大丈夫だと思います。
+        </p>
+        <p class="p-sub">
+            とはいえ、このホームページは仕様を全て記入していく事を目的にしています。<br />
+            よってこれ以降も
+            <span class="thisword-s">windowPlug</span>
+            についての説明がいろいろ続きます。
+        </p>
+        <p class="p-sub">
+            これ以降は
+            <span class="thisword-s">windowPlug</span>
+            の細かい仕様についての事になります。
+        </p>
+        <p class="p-sub">
+            ですので、さらにいろいろ知りたい方はこれ以降も読んでみてください。
+        </p>
+    </div><!--  div-section-one  -->
+    <div class="div-section-one d-type-basic">
+        <div class="pagination1 d-type-small-basic">
+            <a href="#" class="p1-prev hidden-bu">前へ</a>
+            <a href="windowPlug2.html" class="p1-next">次へ</a>
+        </div>
+        <nav class="categorylinks">
+            <div class="categorylinks-title">
+                <span class="span-categorylinks-title">windowPlugの関連</span>
+            </div>
+            <ul class="ul-categorylinks-row">
+                <li class="categorylinks-current">その<span class="numeral">1</span></li>
+                <li><a href="windowPlug2.html">その<span class="numeral">2</span></a></li>
+                <li><a href="windowPlugDict.html">windowPlugの変数・関数・サブルーチン</a></li>
+            </ul>
+        </nav>
+    </div><!--  div-section-one  -->
+
+
+
+
+</div><!-- width-short -->
+
+</article>
+
+</main>
+
+    <div id="edgeMenuArea">
+        <nav class="nav-side">
+            <div class="edgeAreaSpace">
+                <p class="p-sub">
+                    何かに使うかもしれないサイドエリア
+                </p>
+            </div>
+        </nav>
+        
+    </div><!-- edgeMenuArea -->
+
+</div><!-- page-contents -->
+
+<footer id="footer-wrapper">
+    <div id="footer-trrpage">
+        <div class="footer-trrpage-block">
+            <div class="footer-trrpage-caption">
+                作者ブランボンのホームページ：
+            </div>
+            <div class="footer-trrpagelink">
+                <p class="footer-trrpagelink-p">
+                    <span class="trrhomepage spacePlus-r"><a href="https://textrunrunburanbon.com">TextRunRunの説明を見るページ</a></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="footer-buranbon">
+        <small id="small-footer-buranbon"><span id="in-footer-buranbon">Copyright &copy; ブランボン</span></small>
+    </div>
+</footer>
+
+    <div id="div-pageTop-oth">
+        <a href="#pagetop-first" class="a-pageTop-oth"><span class="span-pageTop-up-oth">↑</span></a>
+    </div>
+
+    <button id="anywhere-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav id="anywhere-menu">
+        <ul class="ul-index-preface">
+            <li>
+                <a href="#title_preface">前書き</a>
+            </li>
+        </ul>
+        <ul class="ul-index-thispage">
+            <li>
+                <a href="#title1">概要</a>
+            </li>
+            <li>
+                <a href="#title2">ウインドウの情報を登録する</a>
+            </li>
+            <li>
+                <a href="#title3">ソースコードへの追加の仕方</a>
+                <ul class="ul-index-thispage-2">
+                    <li>
+                        <a href="#title3_1">windowPlug のダウンロード</a>
+                    </li>
+                    <li>
+                        <a href="#title3_2">windowPlug のフォルダをコピーする</a>
+                    </li>
+                    <li>
+                        <a href="#title3_3">ソースコードを記入する</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#title4">位置とサイズのウインドウについて</a>
+                <ul class="ul-index-thispage-2">
+                    <li>
+                        <a href="#title4_1">絶対指定とプラス指定</a>
+                    </li>
+                    <li>
+                        <a href="#title4_2">ウインドウタイトル</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#title5">メニューにある項目について</a>
+                <ul class="ul-index-thispage-2">
+                    <li>
+                        <a href="#title5_1">保存と元に戻す</a>
+                    </li>
+                    <li>
+                        <a href="#title5_2">取得</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+</div><!-- allContents -->
+</body>
+</html>

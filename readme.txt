@@ -4,6 +4,11 @@
 Web：https://textrunrunburanbon.com  
 
 
+使い方を説明したページ
+https://buranbon51.github.io/windowPlugin/
+
+
+
 ウインドウの位置と大きさを保存するためのものです。
 簡易的なものです。
 
